@@ -9,12 +9,12 @@
       <p>
         <input type="text" v-model="keyword">
       </p>
-      <p>
+      <p v-cloak>
         {{ message }}
       </p>
 
       <ul>
-        <li v-for="item in items">
+        <li v-cloak v-for="item in items">
           <!-- {{ item.title }} -->
           <a v-bind:href="item.url" target="_blank">{{ item.title }}</a> likes:{{ item.likes_count }}
         </li>
